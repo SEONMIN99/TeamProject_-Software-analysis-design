@@ -2,7 +2,7 @@
 /**
  * Write a description of class MyApp here.
  *
- * @author (김선민, 정철우, 정대기, 케이토)
+ * @author (2018315040 김선민, 정철우, 정대기, 케이토)
  * @version (a version number or a date)
  */
 public class MyApp
