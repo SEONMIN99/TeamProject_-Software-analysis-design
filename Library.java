@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Write a description of class Library here.
  *
@@ -7,27 +7,33 @@
  */
 public class Library
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private String name;
+    private Hashset<Borrower> registeredBorrowers;
+    private Treeset<Book> registeredBooks;
 
-    /**
-     * Constructor for objects of class Library
-     */
-    public Library()
-    {
-        // initialise instance variables
-        x = 0;
+    public Library(String name){
+        this.name = name;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void registerOneBorrower(String name){
+        Borrower borrower = new Borrower(name);
+        registeredBorrwers.add(borrower);
+    }
+
+    public void regisetOneBook(String title, String author, int catalogueNumber){
+        Book book = new Book(title, author, catalogueNumber);
+        registeredBooks.add(book);
+    }
+
+    public void displayBooksForLoan(){
+
+    }
+
+    public void leadOneBook(String name, int catalogueNumber){
+
+    }
+
+    public void returnOneBook(int catalogueNumber){
+
     }
 }
