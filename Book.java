@@ -1,3 +1,6 @@
+import java.util.AbstractSet.*;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Write a description of class Book here.
@@ -7,27 +10,33 @@
  */
 public class Book
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Book
-     */
-    public Book()
-    {
-        // initialise instance variables
-        x = 0;
+    private int catalogueNumber;
+    private String author;
+    private String title;
+    private TreeSet<Book> registeredBook;
+    public String toString(){
+        
+        return null;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void addNewBook(String title,String author,int catalogueNumber){
+    }
+    public void CheckOneBook(String title,String author,int catalogueNumber){
+        
+    }
+    public void add(Book){
+    }
+    public void newBook(String title,String author,int catalogueNumber){
+    }
+    public void findBooksAvailableForLoan(String title,String author,int catalogueNumber){
+    }
+    public void displayBooksAvailableForLoan(){
+    }
+    public void findBooksOnLoan(String title,String author,int catalogueNumber){
+    }
+    public void displayOnLoan(){
+    }
+    public void findOneBook(String title,String author,int catalogueNumber){
+    }
+    public void Book(){
     }
 }
