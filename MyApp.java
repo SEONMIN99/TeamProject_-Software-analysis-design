@@ -2,12 +2,8 @@
 /**
  * Write a description of class MyApp here.
  *
-<<<<<<< HEAD
- * @author (2018315040 김선민, 2018315034 정철우, 정대기, 케이토 2018315057)
-=======
- * @author (2018315040 김선민, 2018315034 정철우,2018315026 정대기, 케이토)
->>>>>>> b533238cecdb5203624d1d91581886f91e0deb4a
- * @version (a version number or a date)
+ * @author (2018315040 김선민, 2018315034 정철우, 2018315026 정대기, 2018315057 리얼윈 케이토)
+ * @version (2019/11/28)
  */
 public class MyApp
 {
