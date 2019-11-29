@@ -1,4 +1,4 @@
-
+import java.util.LinkedList;
 /**
  * Write a description of class Loan here.
  *
@@ -7,27 +7,27 @@
  */
 public class Loan
 {
-    new loan(){
+    public new loan(){
     }
     
-    attachBook(book){
+    public attachBook(book){
     }
     
-    attachBorrower(borrower){
+    public attachBorrower(borrower){
         
     }
-    add(loan){
+    public add(loan){
         
     }
-    detachBorrower(borrower){
-        
-    }
-    
-    detachBook(book){
+    public detachBorrower(borrower){
         
     }
     
-    delete(loan){
+    public detachBook(book){
         
     }
+    
+    public delete(loan){
+        
+        }
 }
