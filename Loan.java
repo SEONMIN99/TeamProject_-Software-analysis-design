@@ -7,12 +7,18 @@ import java.util.LinkedList;
  */
 public class Loan
 {
+    public Loan(){
+        
+    }
     public new loan(){
+    }
+    public String toString(){
+        
+        return null;
     }
     
     public attachBook(book){
     }
-    
     public attachBorrower(borrower){
         
     }
@@ -29,5 +35,5 @@ public class Loan
     
     public delete(loan){
         
-        }
+    }
 }

@@ -14,6 +14,11 @@ public class Library
     public Library(String name){
         this.name = name;
     }
+    
+    public String toString(){
+        
+        return null;
+    }
 
     public void registerOneBorrower(String name){
         Borrower borrower = new Borrower(name);

@@ -11,6 +11,10 @@ public class Borrower
     public Borrower(String name){
         this.name = name;
     }
+    public String toString(){
+        
+        return null;
+    }
     public void addNewBorrower(String name){
         
     }
