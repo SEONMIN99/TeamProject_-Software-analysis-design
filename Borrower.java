@@ -8,23 +8,11 @@ import java.util.*;
 public class Borrower
 {
     private String name;
-    public Borrower(String name){
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
-    }
-    public String toString(){
-        
-        return null;
-    }
-    public void addNewBorrower(String name){
-        
-    }
-    public void CheckOneBorrower(String name){
-        
-    }
-    public void newBorrower(String name){
-        
-    }
-    public void getBorrower(String name){
-        
     }
 }
