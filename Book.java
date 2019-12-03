@@ -40,4 +40,8 @@ public class Book implements Comparable<Book>
 
         return this.getCatalogueNumber() - anotherBook.getCatalogueNumber();
     }
+    
+    public void display(){
+        System.out.println(getTitle() + getAuthor());
+    }
 }
