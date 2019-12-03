@@ -10,6 +10,7 @@ public class Book implements Comparable<Book>
     private int CatalogueNumber;
     private String Title;
     private String Author;
+    private Borrower borrower;
 
     public int getCatalogueNumber() {
         return CatalogueNumber;
@@ -35,12 +36,25 @@ public class Book implements Comparable<Book>
         Author = author;
     }
 
+    public Borrower getBorrower()
+    {
+        return borrower;
+    }
+
+    public void attachBorrower(Borrower borrower){
+        this.borrower = borrower;
+    }
+
+    public void detachBorrower(Borrower borrower){
+        this.borrower = null;
+    }
+
     @Override
     public int compareTo(Book anotherBook) {
 
         return this.getCatalogueNumber() - anotherBook.getCatalogueNumber();
     }
-    
+
     public void display(){
         System.out.println(getTitle() + getAuthor());
     }
