@@ -104,13 +104,18 @@ public class Library
     {
         Book book = new Book();
         Borrower borrower = new Borrower();
-        if(Books.contains(CatalogueNumber) && Borrowers.contains(name)){
+        if(Books.contains(CatalogueNumber) && Borrowers.contains(Name)){
             if(book.getBorrower == null && borrower.getBook == null){
                 Loan loan = new Loan();
-                loan.set
-                
+                loan.setCatalogueNumber(CatalogueNumber);
+                loan.setName(Name);
+                loan.setBook(book);
+                loan.setBorrower(borrower);
+                Loans.add(loan);
+                book.attachBorrower(borrower);
+                borrower.attachBook(book);
             }else{
-                
+                System.out.println("대출할 수 없습니다.");
             }
         }else{
             System.out.println("대출할 수 없습니다.");
