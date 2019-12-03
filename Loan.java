@@ -9,6 +9,11 @@ public class Loan
 {
     private Book book;
     private Borrower borrower;
+    
+    public Loan(){
+        
+    }
+    
     public Book getBook() {
         return book;
     }

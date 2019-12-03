@@ -9,6 +9,10 @@ public class Borrower
 {
     private String name;
     private Book book;
+    
+    public Borrower(){
+        
+    }
     public String getName() {
         return name;
     }
