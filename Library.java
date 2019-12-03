@@ -69,7 +69,7 @@ public class Library
     }
 
     //3. 대출 가능한 책들을 화면에 출력한다.
-    public void DisplayBooksForLoan()
+    public void displayBooksForLoan()
     {
         Iterator iter = Books.iterator();
         while(iter.hasNext()){
@@ -85,7 +85,7 @@ public class Library
     }
 
     //4. 대출 중인 책들을 화면에 출력한다.
-    public void DisplayBooksOnLoan()
+    public void displayBooksOnLoan()
     {
         Iterator iter = Books.iterator();
         while(iter.hasNext()){
@@ -100,7 +100,7 @@ public class Library
     }
 
     //5. 책을 대출한다.
-    public void LendOneBook(int CatalogueNumber, String Title, String Name)
+    public void lendOneBook(int CatalogueNumber, String Title, String Name)
     {
         Book book = new Book();
         Borrower borrower = new Borrower();
@@ -118,7 +118,7 @@ public class Library
     }
 
     //6. 책을 반납한다.
-    public void ReturnOneBook(int CatalogueNumber, String Title, String Name)
+    public void returnOneBook(int CatalogueNumber, String Title, String Name)
     {
 
     }
