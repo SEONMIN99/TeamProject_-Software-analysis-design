@@ -82,7 +82,7 @@ public class Library
     //5. 책을 대출한다.
     public void LendOneBook(int CatalogueNumber, String Title, String Name)
     {
-
+        
     }
 
     //6. 책을 반납한다.
