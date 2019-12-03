@@ -10,16 +10,16 @@ import java.util.TreeSet;
 public class Library
 {
     private String name;
-    private HashSet<String> borrowers; //중복 불허
-    private TreeSet<Book> books; 
-    private HashSet<Loan> loans; 
+    private HashSet<String> Borrowers; //중복 불허
+    private TreeSet<Integer> Books; 
+    private HashSet<Loan> Loans; 
 
     public Library(String name)
     {
         this.name = name;
-        borrowers = new HashSet<>();
-        books = new TreeSet<>();
-        loans = new HashSet<>();
+        Borrowers = new HashSet<>();
+        Books = new TreeSet<>();
+        Loans = new HashSet<>();
     }
 
     public String getName() {
@@ -31,44 +31,42 @@ public class Library
     }
 
     //1. 새로운 이용자를 등록한다.
-    public void registerBorrower(String Name)
+    public void registerOneBorrower(String name)
     {
-        Borrower borrower = new Borrower(); //이용자 객체 생성
-        borrower.setName(Name);
+        Borrower borrower = new Borrower();
+        borrower.setName(name);
+        if(Borrowers.contains(name) == false)
+        {		
+            Borrowers.add(borrower.getName());
 
-        boolean result = borrowers.add(borrower.getName()); //boolean값으로 리턴 (리턴 값이 false이면, borrowers컬렉션에 borrower객체 존재)
-        if(result) //같은 객체 존재 안함
-        {
-            borrowers.add(borrower.getName()); //borrower객체를 borrowers 컬렉션에 추가
-            System.out.println(borrower.getName() + "님이 등록되었습니다.");
-        }
-        else //같은 객체가 존재
-        {
-            System.out.println(borrower.getName() + "님은 이미 등록되어 있습니다.");
-        }
-        System.out.println(borrowers); //확인 출력
-    }
-    
-    //2. 새로운 책을 등록한다.
-    public void registerBook(int CatalogueNumber, String Title, String Author)
-    {
-        Book book = new Book(); //책 객체 생성
-        book.setCatalogueNumber(CatalogueNumber);
-        book.setTitle(Title);
-        book.setAuthor(Author);
-
-        boolean result = books.add(book); //boolean값으로 리턴 (리턴 값이 false이면 books에 book객체 존재)
-        if(result)
-        {
-            books.add(book);
-            System.out.println("책 '"+ book.getTitle() + "'이 추가되었습니다.");
+            //System.out.println(Borrowers);
+            System.out.println(name + "님이 등록되었습니다.");
         }
         else
         {
-            System.out.println("책 '" + book.getTitle() + "'은 이미 등록되어 있는 책입니다.");
+            System.out.println(borrower.getName() + "님은 이미 등록되어 있습니다.");
         }
-        System.out.println(books);
     }
+
+    //2. 새로운 책을 등록한다.
+    public void registerOneBook(int catalogueNumber, String title, String author)
+    {
+        Book book = new Book();
+        book.setCatalogueNumber(catalogueNumber);
+        book.setTitle(title);
+        book.setAuthor(author);
+        if(Books.contains(catalogueNumber) == false)
+        {		
+            Books.add(catalogueNumber);
+            //System.out.println(Books);
+            System.out.println(book.getTitle() + "책이 등록되었습니다.");
+        }
+        else
+        {
+            System.out.println(book.getTitle() + "책은 이미 등록되어 있습니다.");
+        }
+    }
+
     //3. 대출 가능한 책들을 화면에 출력한다.
     public void DisplayBooksForLoan()
     {
