@@ -102,7 +102,19 @@ public class Library
     //5. 책을 대출한다.
     public void LendOneBook(int CatalogueNumber, String Title, String Name)
     {
-        
+        Book book = new Book();
+        Borrower borrower = new Borrower();
+        if(Books.contains(CatalogueNumber) && Borrowers.contains(name)){
+            if(book.getBorrower == null && borrower.getBook == null){
+                Loan loan = new Loan();
+                loan.set
+                
+            }else{
+                
+            }
+        }else{
+            System.out.println("대출할 수 없습니다.");
+        }
     }
 
     //6. 책을 반납한다.
