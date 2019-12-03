@@ -11,6 +11,10 @@ public class Book implements Comparable<Book>
     private String Title;
     private String Author;
     private Borrower borrower;
+    
+    public Book(){
+        
+    }
 
     public int getCatalogueNumber() {
         return CatalogueNumber;
